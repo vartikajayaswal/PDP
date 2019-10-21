@@ -1,0 +1,2 @@
+# PDP
+Product details page
