@@ -1,0 +1,124 @@
+.footer-container {
+	background-color: #000000;
+	.footer-strips {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #f1f1f1;
+		padding: 10px;
+		.footer-strips-inner {
+			display: flex;
+			span {
+				margin-left: 10px;
+			}
+		}
+	}
+	.vertical-divider {
+		background-color: #c8c8c8;
+		height: 30px;
+		width: 1px;
+	}
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		padding: 60px 70px 55px 70px;
+		font-size: 12px;
+		color: #ffffff;
+		.footer-content-mobile {
+			display: none;
+		}
+		.header {
+			font-weight: bold;
+			line-height: 1.5;
+			letter-spacing: 1px;
+		}
+		.content {
+			display: flex;
+			flex-direction: column;
+			line-height: 2;
+		}
+		.footer-newsletter {
+			display: flex;
+			flex-direction: column;
+			.content {
+				display: flex;
+				flex-direction: row;
+			}
+			
+			button {
+				width: 90px;
+				height: 40px;
+				border: solid 2px #ffffff;
+				background: transparent;
+				color: #ffffff;
+				font-size: 10px;
+				font-weight: bold;
+			}
+		}
+		input {
+			margin-right: 8px;
+			background: transparent;
+			border: none;
+			border-bottom: solid 1px #ffffff;
+			width: 200px;
+			height: 36px;
+			&::placeholder {
+				color: #ffffff;
+			}
+		}
+		.social-media-icons {
+			padding-top: 35px;
+			svg {
+				margin-right: 30px;
+			}
+		}
+	}
+	.copyright {
+		padding: 16px 0 13px;
+		opacity: 0.5;
+		font-size: 12px;
+		line-height: 2;
+		text-align: center;
+		color: #ffffff;
+		border-top: 1px solid #f9f9f9;
+		margin-left: 72px;
+		margin-right: 72px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.footer-container{
+		.footer-content {
+			flex-direction: column;
+			padding: 55px 40px 10px;
+			.content-section {
+				display: none;
+			}
+			.footer-content-mobile {
+				display: flex;
+				justify-content: space-between;
+				.footer-mobile-left,.footer-mobile-right{
+					ul{
+						margin-bottom: 40px;
+					}
+				}
+			}
+			.footer-newsletter {
+				margin-bottom: 60px;
+			}
+		}
+		.copyright{
+			margin-left: 45px;
+			margin-right: 45px;
+		}
+	} 
+}
+@media screen and (max-width: 990px) {
+  .footer-container {
+	.footer-strips {
+		.payment, .one {
+			display: none;
+		}
+	}
+  } 
+}

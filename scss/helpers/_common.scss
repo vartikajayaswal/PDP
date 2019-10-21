@@ -1,0 +1,20 @@
+$primary-yellow: #ffcf60;
+$primary-green: #7dc242;
+
+body {
+	margin: 0;
+}
+
+.list--reset {
+	padding-left: 0;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+@media screen and (max-width: 990px) {
+  .desktop-only{
+    display: none!important;
+  }
+}
